@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="alto_img">80dp</dimen>
+    <dimen name="ancho_img">300dp</dimen>
+</resources>

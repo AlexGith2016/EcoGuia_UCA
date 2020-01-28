@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.GaleriaFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:textColor="@color/primaryText"
+            android:text="ejemplo1"
+            android:id="@+id/txtTituloPatogeno"/>
+
+        <ImageView
+            android:id="@+id/ivTituloPatogeno"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alto_img"
+            android:scaleType="fitXY"
+            android:src="@drawable/mas"
+            android:layout_weight="6"></ImageView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvGaleria"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/alto_img"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</FrameLayout>
