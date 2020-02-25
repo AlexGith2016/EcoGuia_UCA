@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Calculadora_Producto"
+            android:label="Calculadora de patogenos"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.uca.ecoguiauca.MainActivity"/>
+        </activity>
         <activity
             android:name=".Calculo_patogeno"
             android:label="Calculo de patogenos"

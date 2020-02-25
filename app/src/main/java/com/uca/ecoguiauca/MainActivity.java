@@ -64,6 +64,12 @@ public class MainActivity extends AppCompatActivity {
                     startActivityForResult(intent, 1);
 
                 }
+                if(imagenes[position] == R.drawable.calc1){
+                    Intent intent = new Intent(MainActivity.this,Calculadora_Producto.class);
+                    intent.putExtra("number1", 70);
+                    intent.putExtra("number2", 20);
+                    startActivityForResult(intent, 1);
+                }
             }
         });
     }
