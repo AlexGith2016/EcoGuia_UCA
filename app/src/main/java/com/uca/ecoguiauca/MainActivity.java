@@ -70,6 +70,12 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("number2", 20);
                     startActivityForResult(intent, 1);
                 }
+                if(imagenes[position] == R.drawable.opcion1){
+                    Intent intent = new Intent(MainActivity.this,Configuracion.class);
+                    intent.putExtra("number1", 70);
+                    intent.putExtra("number2", 20);
+                    startActivityForResult(intent, 1);
+                }
             }
         });
     }
@@ -90,6 +96,8 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            finish();
+            System.exit(0);
             return true;
         }
 
